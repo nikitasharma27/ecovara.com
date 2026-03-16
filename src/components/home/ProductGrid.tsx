@@ -9,10 +9,10 @@ export default function ProductGrid() {
     <section className="py-24 bg-[#FAFAF8] border-t border-sand/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20 flex flex-col items-center">
-          <span className="uppercase tracking-[0.2em] text-forest text-sm font-semibold mb-4 block">The Collection</span>
-          <h2 className="font-serif text-3xl md:text-5xl text-foreground font-bold mb-6">Discover The Signature Mat</h2>
+          <span className="uppercase tracking-[0.2em] text-forest text-sm font-semibold mb-4 block">The Sustainable Collection</span>
+          <h2 className="font-serif text-3xl md:text-5xl text-foreground font-bold mb-6">Discover The Signature Eco Mat</h2>
           <div className="w-16 h-0.5 bg-terracotta mb-6"></div>
-          <p className="text-foreground/70 max-w-2xl font-light">Experience the perfect balance of organic grip and supportive cushioning, designed specifically for the humid climate of the UAE.</p>
+          <p className="text-foreground/70 max-w-2xl font-light">Experience the perfect balance of organic grip and supportive cushioning with our premium natural cork and rubber yoga mats, designed specifically for the humid climate of the UAE.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">

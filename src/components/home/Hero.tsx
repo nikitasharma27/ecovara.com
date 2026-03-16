@@ -28,15 +28,15 @@ export default function Hero() {
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-4xl"
         >
-          <span className="uppercase tracking-[0.3em] text-sand-light text-sm font-semibold mb-6 block">The Signature Collection</span>
+          <span className="uppercase tracking-[0.3em] text-sand-light text-sm font-semibold mb-6 block">Sustainable Luxury</span>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white font-bold leading-tight mb-8">
-            5,000 Years in the Making.
+            The Ultimate Eco-Friendly Yoga Mat.
           </h1>
           <h2 className="font-serif text-2xl md:text-4xl text-sand-light italic font-light mb-8">
-            Finally, a Mat that Breathes.
+            High-Performance Natural Cork & Rubber.
           </h2>
           <p className="text-sand/90 text-sm md:text-lg max-w-3xl mx-auto mb-12 leading-relaxed font-light">
-            Handcrafted Indian cork. Sustained by nature. Designed for the discerning yogi in the UAE.
+            Elevate your practice with our premium, non-slip yoga mats. Crafted from ethically sourced, biodegradable materials for the discerning yogi who values both aesthetics and the earth.
           </p>
 
           <motion.div

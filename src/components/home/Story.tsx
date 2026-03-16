@@ -31,19 +31,19 @@ export default function Story() {
             transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
             className="w-full md:w-1/2"
           >
-            <span className="uppercase tracking-[0.2em] text-terracotta text-sm font-semibold mb-6 block">Our Heritage</span>
+            <span className="uppercase tracking-[0.2em] text-terracotta text-sm font-semibold mb-6 block">Sustainable Heritage</span>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground font-bold leading-tight mb-8">
-              Rooted in 5,000 Years of Tradition.
+              Premium Natural Cork, Rooted in Tradition.
             </h2>
             <div className="space-y-6 text-foreground/80 font-light leading-relaxed text-lg">
               <p>
-                Yoga wasn't born in a sterile studio. It was born on the earth, under the Indian sun. For millennia, practitioners have sought a grounded connection to the natural world.
+                As a pioneer in eco-friendly wellness, Ecovara redefines the luxury yoga experience. We believe a truly grounding practice requires a foundation built purely by nature, free from the synthetic plastics found in traditional mats.
               </p>
               <p>
-                We honor that heritage by reviving the purest materials. Our signature mats are consciously crafted from sustainably harvested natural cork and dense tree rubber, completely free from toxic PVCs and synthetic TPEs.
+                Our signature eco-friendly yoga mats are consciously crafted from sustainably harvested natural cork and dense, non-slip tree rubber. They are completely biodegradable, organic, and free from toxic PVCs, offering high-performance grip that actually improves with sweat.
               </p>
               <p className="font-serif italic text-2xl text-forest pt-6 border-l-2 border-terracotta pl-6 my-8">
-                "A practice as ancient as yoga deserves a foundation built by nature."
+                "Sustainable luxury isn't a compromise. It's an elevation of your practice."
               </p>
             </div>
           </motion.div>

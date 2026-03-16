@@ -5,6 +5,7 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { sendGAEvent } from '@next/third-parties/google';
 
 export default function WaitlistPage() {
   const [email, setEmail] = useState("");
@@ -13,7 +14,12 @@ export default function WaitlistPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
+
       setSubmitted(true);
+      sendGAEvent('event', 'join_waitlist', {
+        value: 'cork_mat_v1',
+        label: 'UAE Early Access'
+      })
     }
   };
 
@@ -21,7 +27,7 @@ export default function WaitlistPage() {
     <div className="min-h-screen pt-24 md:pt-0 flex flex-col md:flex-row bg-background">
       {/* Left Side: Imagery */}
       <div className="w-full md:w-1/2 relative min-h-[40vh] md:min-h-screen">
-        <Image 
+        <Image
           src="/images/mat_product_2.png"
           alt="Natural Cork Texture"
           fill
@@ -46,7 +52,7 @@ export default function WaitlistPage() {
             <h1 className="font-serif text-4xl md:text-5xl text-foreground font-bold leading-tight mb-6">
               Join the Inner Circle.
             </h1>
-            
+
             {!submitted ? (
               <>
                 <p className="text-foreground/70 font-light leading-relaxed mb-10 text-lg">

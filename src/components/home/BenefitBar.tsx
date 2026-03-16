@@ -1,9 +1,9 @@
 export default function BenefitBar() {
   const benefits = [
-    { title: "Antimicrobial Cork", description: "Naturally repels sweat & odor" },
-    { title: "Zero-Slip Rubber Grip", description: "Unmatched stability on any floor" },
-    { title: "100% Biodegradable", description: "Sustainably harvested in India" },
-    { title: "Complimentary Delivery", description: "Free shipping across the UAE" },
+    { title: "Antimicrobial Natural Cork", description: "Eco-friendly surface naturally repels sweat & odor" },
+    { title: "Non-Slip Yoga Mat Grip", description: "100% natural, high-performance rubber base" },
+    { title: "100% Biodegradable Mat", description: "Sustainable luxury crafted from the earth" },
+    { title: "Complimentary UAE Delivery", description: "Free shipping for your premium yoga mat" },
   ];
 
   return (
