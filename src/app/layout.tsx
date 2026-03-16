@@ -47,12 +47,12 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${playfair.variable} font-sans antialiased bg-background text-foreground`}
       >
-        <GoogleAnalytics gaId="G-Z7KG60NCHW" />
         <Header />
         <main className="min-h-screen">
           {children}
         </main>
         <Footer />
+        <GoogleAnalytics gaId="G-Z7KG60NCHW" />
       </body>
     </html>
   );
