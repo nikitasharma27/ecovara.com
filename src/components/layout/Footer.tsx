@@ -10,7 +10,7 @@ export default function Footer() {
             5,000 years in the making. Handcrafted natural cork and rubber yoga mats, inspired by Indian tradition and designed for the modern practitioner in the UAE.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-2 gap-8 md:col-span-2">
           <div>
             <h3 className="uppercase tracking-widest text-xs font-semibold mb-6 text-sand/60">Explore</h3>
@@ -23,14 +23,14 @@ export default function Footer() {
           <div>
             <h3 className="uppercase tracking-widest text-xs font-semibold mb-6 text-sand/60">Connect</h3>
             <ul className="space-y-4 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Instagram</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
+              {/* <li><a href="#" className="hover:text-white transition-colors">Instagram</a></li> */}
+              <li><a href="mailto:ecovara.co@gmail.com" className="hover:text-white transition-colors">Contact Us</a></li>
+              <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
             </ul>
           </div>
         </div>
       </div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-sand/20 flex flex-col md:flex-row justify-between items-center text-xs text-sand/50">
         <p>&copy; {new Date().getFullYear()} Ecovara Wellness. All rights reserved.</p>
         <div className="flex space-x-6 mt-4 md:mt-0">

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Leaf, Shield, Droplets, Wind, Ruler } from "lucide-react";
 import { useState } from "react";
+import FAQ from "@/components/product/FAQ";
 
 export default function ProductDetailPage() {
   const [activeImage, setActiveImage] = useState(0);
@@ -14,6 +15,7 @@ export default function ProductDetailPage() {
     <div className="pt-24 pb-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Product Top Section */}
+        {/* ... (previous code) ... */}
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Main Gallery */}
           <div className="w-full lg:w-[55%] sticky top-24">
@@ -21,7 +23,7 @@ export default function ProductDetailPage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="relative aspect-[4/5] bg-sand/10 mb-4 overflow-hidden"
+              className="relative aspect-4/5 bg-sand/10 mb-4 overflow-hidden"
             >
               <Image 
                 src={images[activeImage]} 
@@ -151,6 +153,9 @@ export default function ProductDetailPage() {
             </motion.div>
           </div>
         </div>
+
+        {/* FAQ Section */}
+        <FAQ />
       </div>
     </div>
   );
