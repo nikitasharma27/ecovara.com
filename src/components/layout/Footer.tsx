@@ -23,7 +23,6 @@ export default function Footer() {
           <div>
             <h3 className="uppercase tracking-widest text-xs font-semibold mb-6 text-sand/60">Connect</h3>
             <ul className="space-y-4 text-sm">
-              {/* <li><a href="#" className="hover:text-white transition-colors">Instagram</a></li> */}
               <li><a href="mailto:ecovara.co@gmail.com" className="hover:text-white transition-colors">Contact Us</a></li>
               <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
             </ul>
