@@ -32,10 +32,10 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-sand/20 flex flex-col md:flex-row justify-between items-center text-xs text-sand/50">
         <p>&copy; {new Date().getFullYear()} Ecovara Wellness. All rights reserved.</p>
-        <div className="flex space-x-6 mt-4 md:mt-0">
+        {/* <div className="flex space-x-6 mt-4 md:mt-0">
           <Link href="#" className="hover:text-sand">Privacy Policy</Link>
           <Link href="#" className="hover:text-sand">Terms of Service</Link>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
