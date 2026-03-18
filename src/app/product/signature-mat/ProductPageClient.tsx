@@ -47,7 +47,7 @@ export default function ProductPageClient() {
           </div>
 
           {/* Product Info */}
-          <div className="w-full lg:w-[45%] py-10">
+          <div className="w-full lg:w-[45%]">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -103,7 +103,7 @@ export default function ProductPageClient() {
         </div>
 
         {/* Infographic Why Cork Section */}
-        <div className="mt-32 pt-20 border-t border-sand/30">
+        <div className="mt-24 pt-20 border-t border-sand/30">
           <div className="text-center mb-16">
             <span className="uppercase tracking-[0.2em] text-forest text-sm font-semibold mb-4 block">The Science of Nature</span>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground font-bold">Why Natural Cork?</h2>
