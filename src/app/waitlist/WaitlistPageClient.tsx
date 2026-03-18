@@ -11,15 +11,38 @@ import FAQ from "@/components/product/FAQ";
 export default function WaitlistPageClient() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      setSubmitted(true);
-      sendGAEvent('event', 'join_waitlist', {
-        value: 'cork_mat_v1',
-        label: 'UAE Early Access'
-      })
+      setIsLoading(true);
+      setError(null);
+      
+      try {
+        const response = await fetch('/api/waitlist', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          setSubmitted(true);
+          sendGAEvent('event', 'join_waitlist', {
+            value: 'cork_mat_v1',
+            label: 'UAE Early Access'
+          })
+        } else {
+          setError(data.error || 'Something went wrong. Please try again.');
+        }
+      } catch (err) {
+        setError('Connection failed. Please check your internet and try again.');
+      } finally {
+        setIsLoading(false);
+      }
     }
   };
 
@@ -74,10 +97,15 @@ export default function WaitlistPageClient() {
                     </div>
                     <button
                       type="submit"
-                      className="w-full bg-foreground text-background py-4 flex items-center justify-center gap-3 uppercase tracking-widest text-sm font-semibold hover:bg-terracotta transition-colors group"
+                      disabled={isLoading}
+                      className="w-full bg-foreground text-background py-4 flex items-center justify-center gap-3 uppercase tracking-widest text-sm font-semibold hover:bg-terracotta transition-colors group disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      Request Access <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      {isLoading ? 'Requesting Access...' : 'Request Access'} 
+                      {!isLoading && <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />}
                     </button>
+                    {error && (
+                      <p className="text-terracotta text-sm mt-4 font-medium italic">{error}</p>
+                    )}
                   </form>
                 </>
               ) : (
