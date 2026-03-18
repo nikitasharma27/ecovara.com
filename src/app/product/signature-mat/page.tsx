@@ -42,7 +42,7 @@ const productData = {
     "@type": "Offer",
     "url": "https://ecovara.com/product/signature-mat",
     "priceCurrency": "AED",
-    "price": "450",
+    "price": "299",
     "availability": "https://schema.org/OutOfStock",
     "itemCondition": "https://schema.org/NewCondition"
   },

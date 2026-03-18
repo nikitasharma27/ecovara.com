@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: "How much does the Ecovara mat cost, and is it worth it?",
-    answer: "The Signature Mat is priced at AED 450. Unlike synthetic mats that need replacing yearly, a well-maintained cork mat lasts several years. That works out to significantly less per-use cost — and zero toxic landfill at end of life."
+    answer: "The Signature Mat is priced at AED 299. Unlike synthetic mats that need replacing yearly, a well-maintained cork mat lasts several years. That works out to significantly less per-use cost — and zero toxic landfill at end of life."
   },
   {
     question: "Does the mat come with a bag or strap?",

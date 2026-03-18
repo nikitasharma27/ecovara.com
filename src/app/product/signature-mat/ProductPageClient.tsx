@@ -61,7 +61,7 @@ export default function ProductPageClient() {
               <h1 className="font-serif text-4xl md:text-5xl text-foreground font-bold leading-tight mb-4">
                 The Signature Mat
               </h1>
-              <p className="text-2xl font-serif text-foreground/80 mb-8 italic">450 AED</p>
+              <p className="text-2xl font-serif text-foreground/80 mb-8 italic">299 AED</p>
 
               <div className="space-y-4 text-foreground/70 font-light leading-relaxed mb-8 text-lg">
                 <p>

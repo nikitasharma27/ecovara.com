@@ -40,7 +40,7 @@ export default function ProductGrid() {
                   <h3 className="font-serif text-2xl font-bold text-foreground mb-2 group-hover:text-terracotta transition-colors">The Signature Mat</h3>
                   <p className="text-sm text-foreground/70 font-light">Natural Cork & Organic Rubber • 5mm Thickness</p>
                 </div>
-                <span className="font-medium text-xl whitespace-nowrap ml-4">450 AED</span>
+                <span className="font-medium text-xl whitespace-nowrap ml-4">299 AED</span>
               </div>
             </Link>
           </motion.div>
