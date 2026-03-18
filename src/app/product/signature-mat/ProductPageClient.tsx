@@ -17,7 +17,7 @@ export default function ProductPageClient() {
         {/* Product Top Section */}
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Main Gallery */}
-          <div className="w-full lg:w-[55%] sticky top-24">
+          <div className="w-full lg:w-[55%] lg:sticky lg:top-24">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -47,7 +47,7 @@ export default function ProductPageClient() {
           </div>
 
           {/* Product Info */}
-          <div className="w-full lg:w-[45%] lg:py-10">
+          <div className="w-full lg:w-[45%] py-10">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
