@@ -1,8 +1,10 @@
 import Hero from "@/components/home/Hero";
 import BenefitBar from "@/components/home/BenefitBar";
-import Story from "@/components/home/Story";
-import ProductGrid from "@/components/home/ProductGrid";
+import dynamic from "next/dynamic";
 import { Metadata } from "next";
+
+const Story = dynamic(() => import("@/components/home/Story"), { ssr: true });
+const ProductGrid = dynamic(() => import("@/components/home/ProductGrid"), { ssr: true });
 
 export const metadata: Metadata = {
   title: "Ecovara | Premium Sustainable Luxury Yoga Mats in UAE",

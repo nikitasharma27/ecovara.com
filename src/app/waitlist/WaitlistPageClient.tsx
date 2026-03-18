@@ -63,7 +63,7 @@ export default function WaitlistPageClient() {
 
         {/* Right Side: Form Content */}
         <div className="w-full md:w-1/2 flex items-center justify-center p-8 lg:p-16 relative">
-          <Link href="/" className="absolute top-8 right-8 text-sm uppercase tracking-widest font-semibold text-foreground/50 hover:text-terracotta transition-colors">
+          <Link href="/" className="absolute top-8 right-8 text-sm uppercase tracking-widest font-semibold text-foreground/70 hover:text-terracotta transition-colors">
             Return Home
           </Link>
           <div className="max-w-md w-full">
@@ -79,7 +79,7 @@ export default function WaitlistPageClient() {
 
               {!submitted ? (
                 <>
-                  <p className="text-foreground/70 font-light leading-relaxed mb-10 text-lg">
+                  <p className="text-foreground/90 font-light leading-relaxed mb-10 text-lg">
                     We are currently perfecting the next batch of our signature mats. Join the exclusive waitlist for early access and complimentary shipping in Dubai and Abu Dhabi.
                   </p>
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -92,7 +92,7 @@ export default function WaitlistPageClient() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Enter your email address"
-                        className="w-full bg-transparent border-b-2 border-foreground/20 px-0 py-4 text-foreground text-lg focus:outline-none focus:border-terracotta transition-colors placeholder:text-foreground/30 rounded-none"
+                        className="w-full bg-transparent border-b-2 border-foreground/40 px-0 py-4 text-foreground text-lg focus:outline-none focus:border-terracotta transition-colors placeholder:text-foreground/30 rounded-none"
                       />
                     </div>
                     <button
@@ -118,7 +118,7 @@ export default function WaitlistPageClient() {
                     <CheckCircle className="w-6 h-6" />
                   </div>
                   <h3 className="font-serif text-2xl text-foreground font-bold mb-4">You're on the list.</h3>
-                  <p className="text-foreground/70 font-light">
+                  <p className="text-foreground/85 font-light">
                     Thank you for your patience. We will notify you the moment our next batch arrives in the UAE.
                   </p>
                 </motion.div>

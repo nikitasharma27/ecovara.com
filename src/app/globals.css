@@ -4,10 +4,10 @@
   --font-sans: var(--font-inter);
   --font-serif: var(--font-playfair);
 
-  --color-terracotta: #C84B31;
-  --color-terracotta-light: #E2725B;
-  --color-sand: #E8D5C4;
-  --color-sand-light: #F5DDBD;
+  --color-terracotta: #B03D28; /* Slightly darker for better contrast on light backgrounds */
+  --color-terracotta-light: #C84B31;
+  --color-sand: #F2E8DF; /* Lighter sand for better contrast on dark backgrounds */
+  --color-sand-light: #F9F7F2;
   --color-forest: #1A3C24;
   --color-forest-light: #2C5E3B;
   

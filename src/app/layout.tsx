@@ -3,7 +3,7 @@ import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { GoogleAnalytics } from '@next/third-parties/google';
+import Script from "next/script";
 
 import JsonLd from "@/components/seo/JsonLd";
 
@@ -110,7 +110,20 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <GoogleAnalytics gaId="G-L4WQJQSF92" />
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-L4WQJQSF92`}
+          strategy="lazyOnload"
+        />
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-L4WQJQSF92', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
       </body>
     </html>
   );

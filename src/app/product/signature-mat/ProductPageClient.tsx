@@ -61,9 +61,9 @@ export default function ProductPageClient() {
               <h1 className="font-serif text-4xl md:text-5xl text-foreground font-bold leading-tight mb-4">
                 The Signature Mat
               </h1>
-              <p className="text-2xl font-serif text-foreground/80 mb-8 italic">299 AED</p>
+              <p className="text-2xl font-serif text-foreground/90 mb-8 italic">299 AED</p>
 
-              <div className="space-y-4 text-foreground/70 font-light leading-relaxed mb-8 text-lg">
+              <div className="space-y-4 text-foreground/85 font-light leading-relaxed mb-8 text-lg">
                 <p>
                   Experience the grounding foundation of 100% natural sustainably harvested cork combined with a dense natural tree rubber base.
                 </p>
@@ -73,18 +73,18 @@ export default function ProductPageClient() {
               </div>
 
               {/* Specs */}
-              <div className="grid grid-cols-2 gap-4 mb-10 border-y border-sand/30 py-6">
+              <div className="grid grid-cols-2 gap-4 mb-10 border-y border-sand/60 py-6">
                 <div className="flex items-center gap-3">
                   <Ruler className="text-terracotta w-5 h-5 opacity-70" />
                   <div>
-                    <p className="text-xs uppercase tracking-widest font-semibold text-foreground/50">Dimensions</p>
+                    <p className="text-xs uppercase tracking-widest font-semibold text-foreground/70">Dimensions</p>
                     <p className="font-medium text-sm">183cm x 61cm</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Leaf className="text-terracotta w-5 h-5 opacity-70" />
                   <div>
-                    <p className="text-xs uppercase tracking-widest font-semibold text-foreground/50">Thickness</p>
+                    <p className="text-xs uppercase tracking-widest font-semibold text-foreground/70">Thickness</p>
                     <p className="font-medium text-sm">5mm for joint support</p>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export default function ProductPageClient() {
               >
                 Join Waitlist for Next Batch
               </Link>
-              <p className="text-center text-xs text-foreground/50 mt-4 uppercase tracking-wider">Currently out of stock. Securing your spot is completely free.</p>
+              <p className="text-center text-xs text-foreground/70 mt-4 uppercase tracking-wider">Currently out of stock. Securing your spot is completely free.</p>
             </motion.div>
           </div>
         </div>

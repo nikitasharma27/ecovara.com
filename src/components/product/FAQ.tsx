@@ -72,7 +72,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="mt-32 pt-20 border-t border-sand/30">
+    <section id="faq" className="mt-32 pt-20 border-t border-sand/60">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -81,14 +81,14 @@ export default function FAQ() {
       <div className="text-center mb-16">
         {/* <span className="uppercase tracking-[0.2em] text-forest text-sm font-semibold mb-4 block">Knowledge Base</span> */}
         <h2 className="font-serif text-3xl md:text-4xl text-foreground font-bold mb-4">Frequently Asked Questions</h2>
-        <p className="text-foreground/60 max-w-2xl mx-auto font-light">Everything you need to know about the most sustainable yoga mat in the UAE.</p>
+        <p className="text-foreground/85 max-w-2xl mx-auto font-light">Everything you need to know about the most sustainable yoga mat in the UAE.</p>
       </div>
 
       <div className="max-w-3xl mx-auto space-y-4">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="border-b border-sand/30 pb-4"
+            className="border-b border-sand/60 pb-4"
           >
             <button
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -110,7 +110,7 @@ export default function FAQ() {
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                   className="overflow-hidden"
                 >
-                  <p className="text-foreground/70 leading-relaxed font-light pb-4">
+                  <p className="text-foreground/85 leading-relaxed font-light pb-4">
                     {faq.answer}
                   </p>
                 </motion.div>
