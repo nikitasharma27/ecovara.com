@@ -38,7 +38,7 @@ export default function Header() {
           >
             ECOVARA
           </Link>
-          
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-10 text-sm uppercase tracking-widest font-medium">
             <Link
@@ -82,7 +82,7 @@ export default function Header() {
               <ShoppingBag className="w-5 h-5" />
               <span className="absolute -top-1 -right-2 bg-terracotta text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">0</span>
             </Link>
-            <button 
+            <button
               className={cn(
                 "md:hidden focus:outline-none transition-colors duration-300",
                 isScrolled || !isHomepage ? "text-foreground" : "text-white"
@@ -99,22 +99,22 @@ export default function Header() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-sand shadow-lg flex flex-col space-y-4 px-6 py-6 text-center uppercase tracking-widest font-medium text-sm">
-          <Link 
-            href="/#story" 
+          <Link
+            href="/#story"
             className="hover:text-terracotta py-2"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Our Story
           </Link>
-          <Link 
-            href="/product/signature-mat" 
+          <Link
+            href="/product/signature-mat"
             className="hover:text-terracotta py-2"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Shop
           </Link>
-          <Link 
-            href="/waitlist" 
+          <Link
+            href="/waitlist"
             className="hover:text-terracotta py-2"
             onClick={() => setIsMobileMenuOpen(false)}
           >

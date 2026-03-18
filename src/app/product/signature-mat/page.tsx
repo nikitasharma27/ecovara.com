@@ -19,15 +19,15 @@ export default function ProductDetailPage() {
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Main Gallery */}
           <div className="w-full lg:w-[55%] sticky top-24">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8 }}
               className="relative aspect-4/5 bg-sand/10 mb-4 overflow-hidden"
             >
-              <Image 
-                src={images[activeImage]} 
-                alt="The Signature Mat" 
+              <Image
+                src={images[activeImage]}
+                alt="The Signature Mat"
                 fill
                 className="object-cover transition-all duration-700 hover:scale-105 cursor-zoom-in"
                 sizes="(max-width: 1024px) 100vw, 55vw"
@@ -36,8 +36,8 @@ export default function ProductDetailPage() {
             </motion.div>
             <div className="flex gap-4">
               {images.map((src, idx) => (
-                <button 
-                  key={idx} 
+                <button
+                  key={idx}
                   onClick={() => setActiveImage(idx)}
                   className={`relative w-24 h-24 overflow-hidden border-2 transition-colors ${activeImage === idx ? 'border-terracotta' : 'border-transparent hover:border-sand'}`}
                 >
@@ -58,15 +58,15 @@ export default function ProductDetailPage() {
                 <span className="bg-forest text-white text-[10px] uppercase font-bold tracking-widest px-2 py-1">Limited Batch</span>
                 <span className="text-terracotta text-xs font-semibold uppercase tracking-widest">Handcrafted in India</span>
               </div>
-              
+
               <h1 className="font-serif text-4xl md:text-5xl text-foreground font-bold leading-tight mb-4">
                 The Signature Mat
               </h1>
               <p className="text-2xl font-serif text-foreground/80 mb-8 italic">450 AED</p>
-              
+
               <div className="space-y-4 text-foreground/70 font-light leading-relaxed mb-8 text-lg">
                 <p>
-                  Experience the grounding foundation of 100% natural sustainably harvested cork combined with a dense natural tree rubber base. 
+                  Experience the grounding foundation of 100% natural sustainably harvested cork combined with a dense natural tree rubber base.
                 </p>
                 <p>
                   Designed specifically to enhance your grip as you sweat, making it the perfect companion for the dynamic climate of the UAE. No towel required.
@@ -92,8 +92,8 @@ export default function ProductDetailPage() {
               </div>
 
               {/* Waitlist Call to Action */}
-              <Link 
-                href="/waitlist" 
+              <Link
+                href="/waitlist"
                 className="w-full block text-center bg-foreground text-background py-5 uppercase tracking-widest text-sm font-semibold hover:bg-terracotta transition-all duration-300 shadow-xl shadow-foreground/10 hover:shadow-terracotta/20"
               >
                 Join Waitlist for Next Batch
@@ -109,9 +109,9 @@ export default function ProductDetailPage() {
             <span className="uppercase tracking-[0.2em] text-forest text-sm font-semibold mb-4 block">The Science of Nature</span>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground font-bold">Why Natural Cork?</h2>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-20">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -123,8 +123,8 @@ export default function ProductDetailPage() {
               <h3 className="font-serif text-2xl font-bold mb-4">Grip Activated by Sweat</h3>
               <p className="text-foreground/70 font-light leading-relaxed">Cork contains suberin, a waxy, grippy substance that gets stickier and offers supreme traction when wet. The more you sweat, the better your grip.</p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -138,7 +138,7 @@ export default function ProductDetailPage() {
               <p className="text-foreground/70 font-light leading-relaxed">Unlike synthetic mats that trap bacteria and odor, cork naturally repels dust, hair, and microbes. It practically cleans itself, making it a hygienic choice.</p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

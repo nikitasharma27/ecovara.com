@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(req: NextRequest) {
+    /*
     try {
         const { email } = await req.json();
 
@@ -36,4 +37,6 @@ export async function POST(req: NextRequest) {
         console.error('Waitlist submission error:', error);
         return NextResponse.json({ success: false, error: 'Failed to process submission' }, { status: 500 });
     }
+    */
+    return NextResponse.json({ success: true, message: 'Waitlist is currently inactive. Please email ecovara.co@gmail.com' });
 }
